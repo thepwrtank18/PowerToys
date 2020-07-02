@@ -2,39 +2,51 @@
 // The Microsoft Corporation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for more information.
 
+using System.Text.Json.Serialization;
+
 namespace Microsoft.PowerToys.Settings.UI.Lib
 {
     public class PowerLauncherProperties
     {
-        public string search_result_preference { get; set; }
+        [JsonPropertyName("search_result_preference")]
+        public string SearchResultPreference { get; set; }
 
-        public string search_type_preference { get; set; }
+        [JsonPropertyName("search_type_preference")]
+        public string SearchTypePreference { get; set; }
 
-        public int maximum_number_of_results { get; set; }
+        [JsonPropertyName("maximum_number_of_results")]
+        public int MaximumNumberOfResults { get; set; }
 
-        public HotkeySettings open_powerlauncher { get; set; }
+        [JsonPropertyName("open_powerlauncher")]
+        public HotkeySettings OpenPowerLauncher { get; set; }
 
-        public HotkeySettings open_file_location { get; set; }
+        [JsonPropertyName("open_file_location")]
+        public HotkeySettings OpenFileLocation { get; set; }
 
-        public HotkeySettings copy_path_location { get; set; }
+        [JsonPropertyName("copy_path_location")]
+        public HotkeySettings CopyPathLocation { get; set; }
 
-        public HotkeySettings open_console { get; set; }
+        [JsonPropertyName("open_console")]
+        public HotkeySettings OpenConsole { get; set; }
 
-        public bool override_win_r_key { get; set; }
+        [JsonPropertyName("override_win_r_key")]
+        public bool OverrideWinRKey { get; set; }
 
-        public bool override_win_s_key { get; set; }
+        [JsonPropertyName("override_win_s_key")]
+        public bool OverrideWinSKey { get; set; }
 
-        public bool ignore_hotkeys_in_fullscreen { get; set; }
+        [JsonPropertyName("ignore_hotkeys_in_fullscreen")]
+        public bool IgnoreHotkeysInFullscreen { get; set; }
 
         public PowerLauncherProperties()
         {
-            open_powerlauncher = new HotkeySettings();
-            open_file_location = new HotkeySettings();
-            copy_path_location = new HotkeySettings();
-            open_console = new HotkeySettings();
-            search_result_preference = "most_recently_used";
-            search_type_preference = "application_name";
-            ignore_hotkeys_in_fullscreen = false;
+            OpenPowerLauncher = new HotkeySettings();
+            OpenFileLocation = new HotkeySettings();
+            CopyPathLocation = new HotkeySettings();
+            OpenConsole = new HotkeySettings();
+            SearchResultPreference = "most_recently_used";
+            SearchTypePreference = "application_name";
+            IgnoreHotkeysInFullscreen = false;
         }
     }
 }

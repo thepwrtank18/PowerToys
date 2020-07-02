@@ -48,7 +48,6 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
 
         public PowerPreviewProperties()
         {
-
         }
 
         public override string ToString()

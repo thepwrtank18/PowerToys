@@ -5,16 +5,12 @@
 using System;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-using System.Text.Json;
 using Microsoft.PowerToys.Settings.UI.Helpers;
 using Microsoft.PowerToys.Settings.UI.Lib;
 using Microsoft.PowerToys.Settings.UI.Lib.Utilities;
 using Microsoft.PowerToys.Settings.UI.ViewModels.Commands;
 using Microsoft.PowerToys.Settings.UI.Views;
 using Windows.ApplicationModel.Resources;
-using Windows.Data.Html;
-using Windows.System;
-using Windows.UI.Popups;
 using Windows.UI.Xaml;
 
 namespace Microsoft.PowerToys.Settings.UI.ViewModels
@@ -29,8 +25,9 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
 
         private ResourceLoader loader = ResourceLoader.GetForViewIndependentUse();
 
-        public readonly string RunningAsUserDefaultText;
-        public readonly string RunningAsAdminDefaultText;
+        public string RunningAsUserDefaultText { get; set; }
+
+        public string RunningAsAdminDefaultText { get; set; }
 
         public GeneralViewModel()
         {
@@ -350,7 +347,7 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
         }
 
         // callback function to launch the URL to check for updates.
-        private async void CheckForUpdates_Click()
+        private void CheckForUpdates_Click()
         {
             GeneralSettings settings = SettingsUtils.GetSettings<GeneralSettings>(string.Empty);
             settings.CustomActionName = "check_for_updates";

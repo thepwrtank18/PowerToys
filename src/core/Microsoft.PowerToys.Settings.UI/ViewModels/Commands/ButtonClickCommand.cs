@@ -22,6 +22,7 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels.Commands
         // Defines the method that determines whether the command can execute in its current state.
         public bool CanExecute(object parameter)
         {
+            CanExecuteChanged(parameter, null);
             return true;
         }
 

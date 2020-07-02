@@ -96,6 +96,7 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
         }
 
         private bool keyboardManager = true;
+
         [JsonPropertyName("Keyboard Manager")]
         public bool KeyboardManager
         {
@@ -112,7 +113,7 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
 
         private bool powerLauncher = true;
 
-     	[JsonPropertyName("PowerToys Run")]
+        [JsonPropertyName("PowerToys Run")]
         public bool PowerLauncher
         {
             get => this.powerLauncher;

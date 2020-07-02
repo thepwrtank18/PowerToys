@@ -18,15 +18,15 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
         public KeyboardManagerSettings()
         {
             Properties = new KeyboardManagerProperties();
-            version = "1";
-            name = "_unset_";
+            Version = "1";
+            Name = "_unset_";
         }
 
         public KeyboardManagerSettings(string ptName)
         {
             Properties = new KeyboardManagerProperties();
-            version = "1";
-            name = ptName;
+            Version = "1";
+            Name = ptName;
         }
 
         // converts the current to a json string.

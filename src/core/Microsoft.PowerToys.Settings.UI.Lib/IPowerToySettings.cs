@@ -10,9 +10,9 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
 {
     public interface IPowerToySettings
     {
-        string name { get; set; }
+        string Name { get; set; }
 
-        string version { get; set; }
+        string Version { get; set; }
 
         string ToJsonString();
     }

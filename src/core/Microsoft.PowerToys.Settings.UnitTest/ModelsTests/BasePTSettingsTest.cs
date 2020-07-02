@@ -6,8 +6,8 @@ namespace Microsoft.PowerToys.Settings.UnitTest
     {
         public BasePTSettingsTest()
         {
-            this.name = string.Empty;
-            this.version = string.Empty;
+            this.Name = string.Empty;
+            this.Version = string.Empty;
         }
     }
 }

@@ -12,20 +12,20 @@ namespace Microsoft.PowerToys.Settings.UI.Lib
 {
     public class PowerPreviewSettings : BasePTModuleSettings
     {
-        public PowerPreviewProperties properties { get; set; }
+        public PowerPreviewProperties Properties { get; set; }
 
         public PowerPreviewSettings()
         {
-            properties = new PowerPreviewProperties();
-            version = "1";
-            name = "File Explorer";
+            Properties = new PowerPreviewProperties();
+            Version = "1";
+            Name = "File Explorer";
         }
 
         public PowerPreviewSettings(string ptName)
         {
-            properties = new PowerPreviewProperties();
-            version = "1";
-            name = ptName;
+            Properties = new PowerPreviewProperties();
+            Version = "1";
+            Name = ptName;
         }
 
         public override string ToJsonString()

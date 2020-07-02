@@ -417,7 +417,7 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
             ShellPage.DefaultSndMSGCallback("{\"action\":{\"FancyZones\":{\"action_name\":\"ToggledFZEditor\", \"value\":\"\"}}}");
         }
 
-        private String ToRGBHex(Color color)
+        private string ToRGBHex(Color color)
         {
             return "#" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
         }

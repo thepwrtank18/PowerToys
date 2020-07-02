@@ -74,7 +74,6 @@ namespace Microsoft.PowerToys.Settings.UI.ViewModels
                 PowerToyName,
                 settings.Properties.ActiveConfiguration.Value + JsonFileType,
                 OnConfigFileUpdate);
-
         }
 
         public bool Enabled

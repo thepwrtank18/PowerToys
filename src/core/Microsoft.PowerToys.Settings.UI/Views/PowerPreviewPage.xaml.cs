@@ -16,13 +16,13 @@ namespace Microsoft.PowerToys.Settings.UI.Views
     /// </summary>
     public sealed partial class PowerPreviewPage : Page
     {
-        public PowerPreviewViewModel viewModel { get; set; }
+        public PowerPreviewViewModel ViewModel { get; set; }
 
         public PowerPreviewPage()
         {
             this.InitializeComponent();
-            viewModel = new PowerPreviewViewModel();
-            this.PowerPreviewSettingsView.DataContext = viewModel;
+            ViewModel = new PowerPreviewViewModel();
+            this.PowerPreviewSettingsView.DataContext = ViewModel;
         }
     }
 }

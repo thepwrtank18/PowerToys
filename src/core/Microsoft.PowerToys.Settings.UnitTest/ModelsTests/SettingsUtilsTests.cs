@@ -50,7 +50,7 @@ namespace CommonLibTest
         }
 
         [TestMethod]
-        public async Task SaveSettings_ShouldCreateFile_WhenFilePathIsNotFoundAsync()
+        public void aveSettings_ShouldCreateFile_WhenFilePathIsNotFound()
         {
             // Arrange
             string file_name = "test\\Test Folder";

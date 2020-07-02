@@ -11,7 +11,6 @@ using System.Text.Json.Serialization;
 
 namespace Microsoft.PowerToys.Settings.UI.Lib
 {
-
     public class ImageresizerSizes
     {
         [JsonPropertyName("value")]
